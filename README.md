@@ -18,13 +18,13 @@ You can install Prerequisites by doing these steps. [click here & complete all s
 Follow these steps to install and run the Reddit clone app on your local machine:
 
 1) Clone this repository to your local machine: `git clone https://github.com/Sajiyah-Salat/nginx-example.git`
-2) Navigate to the project directory: `cd reddit-clone-k8s-ingress`
+2) Navigate to the project directory: `cd nginx-example`
 3) Build the Docker image for the Reddit clone app: `docker build -t reddit-clone-app .`
-4) Deploy the app to Kubernetes: `kubectl apply -f deployment.yaml`
-1) Deploy the Service for deployment to Kubernetes: `kubectl apply -f service.yaml`
-5) Enable Ingress by using Command: `minikube addons enable ingress`
-6) Expose the app as a Kubernetes service: `kubectl expose deployment reddit-deployment --type=NodePort --port=5000`
-7) Create an Ingress resource: `kubectl apply -f ingress.yaml`
+4) Deploy the app to Kubernetes: `kubectl apply -f deployment.yml`
+1) Deploy the Service for deployment to Kubernetes: `kubectl apply -f service.yml`
+
+6) Expose the app as a Kubernetes service: `kubectl expose deployment reddit-clone-deployment --type=NodePort --port=5000`
+7) Create an Ingress resource: `kubectl apply -f ingress.yml`
 
 
 
